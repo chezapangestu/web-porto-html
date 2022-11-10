@@ -2,8 +2,7 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet">
-<!-- CSS only -->
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+<script src="https://kit.fontawesome.com/c4b86b9828.js" crossorigin="anonymous"></script>
 <style>
   body {
   margin: 25px 20% 0;
@@ -12,6 +11,17 @@
   background-color: #EFF3F6;
   color: #2B2B2B;
 }
+
+subtitle{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
 ul {
   list-style-type: none;
   /* margin: 0; */
@@ -37,6 +47,49 @@ li a:hover:not(.active) {
   color:#aaaaaa;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  /* padding: 10px; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-top: 20px;
+}
+
+.about{
+  margin-top: 100px;
+}
+
+.about-desc{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.education{
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.experience{
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.portfolio {
+  margin-top: 100px;
+  padding: 0px;
+}
+
 
 </style>
 <head>
@@ -45,31 +98,122 @@ li a:hover:not(.active) {
 <body>
   <!-- NAVBAR -->
   <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#home">About</a></li>
   </ul>
   <!--  -->
 
   <!-- About -->
   <section>
-    <div class="container">
-    <h1>Hello, my name is Vijay Cheza Pangestu</h1>
-    <p>I bring an engineering perspective with an creative problem-solving to create products and experiences people love to use. Persistence, 
-      curiosity and obsessive attention to detail define me. With a background in engineering, I experience as a web developer, machine learning programmer, 
-      data analyst and digital designer.</p>
+    <div class="about">
+      <div class="row">
+        <div class="column">
+          <h1>Hello, my name is Vijay Cheza Pangestu</h1>
+          <div class="about-desc">
+            <p>I bring an engineering perspective with an creative problem-solving to create products and experiences people love to use. Persistence, 
+              curiosity and obsessive attention to detail define me. With a background in engineering, I experience as a web developer, machine learning programmer, 
+              data analyst and digital designer.</p>
+          </div>
+        </div>
+        <div class="column">
+          <img src="pict/cheza-pict.png" width="600" height="400">
+        </div>
+      </div>
     </div>
   </section>
   <!--  -->
 
   <!-- Education -->
+  <section>
+    <div class="education">
+      <subtitle>Education</subtitle>
+      <p><b>Telkom University</b> 
+        Bandung, Indonesia</p>
+      <p>Bachelor Degree in Informatics</p>
+    </div>
+  </section>
 
   <!--  -->
 
   <!-- Experience -->
+  <section>
+    <div class="experience">
+      <div class="row">
+  
+        <div class="column">
+          <subtitle>Work Experience</subtitle>
+          <div class="row">
+            <p><b>Telkom Indonesia ITDRI</b><br>
+              Bandung, Indonesia</p>
+              <i>Web Developer Intern</i>
+            </div>
+            <div class="row mt-5">
+              <p><b>Telkom Indonesia ITDRI</b><br>
+              Tasikmalaya, Indonesia</p>
+              <i>Trainer</i>
+            </div>
+            <div class="row">
+              <p><b>Telkom Indonesia Digital Next Business</b><br>
+              Bandung, Indonesia</p>
+              <i>UX Research Intern</i>
+            </div>
+        </div>
+
+        <div class="column">
+          <subtitle>Organizational Experience</subtitle>
+            <div class="row">
+              <p><b>Badan Pengurus Harian 
+                Himpunan Mahasiswa Informatika</b></p>
+              <i>Secretary</i>
+            </div>
+            <div class="row">
+              <p><b>Badan Pengurus Harian 
+                Himpunan Mahasiswa Informatika</b></p>
+              <i>Staff of Media Information and Communication</i>
+            </div>
+            <div class="row">
+              <p><b>Informatics Cybersecurity 
+                and Programming Competition</b></p>
+              <i>Staff of Creative Graphic Designer</i>
+            </div>
+            <div class="row">
+              <p><b>Perhimpunan Mahasiswa Bandung 
+                Telkom University</b></p>
+              <i>Staff of Economy Creative</i>
+            </div>
+            <div class="row">
+              <p><b>BUILD A BOT AI4IMPACT</b></p>
+              <i>Staff of Creative Graphic Designer</i>
+            </div>
+            <div class="row">
+              <p><b>Esports Games Competitions 
+                COPA Telkom University</b></p>
+              <i>Staff of Creative Graphic Designer</i>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 
   <!--  -->
+  
+  <!-- Portfolio -->
+  <section id="portfolio"></section>
+  <div class="portfolio">
+    <subtitle>Portfolio</subtitle>
+    <p>MANTAB</p>
+  </div>
+  </section>
+  <!--  -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <subtitle>Contact</subtitle>
+  </section>
+  <!--  -->
+
 </body>
 </html>
 
