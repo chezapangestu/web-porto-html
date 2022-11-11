@@ -55,7 +55,6 @@ li a:hover:not(.active) {
 .column {
   float: left;
   width: 50%;
-  /* padding: 10px; */
 }
 
 /* Clear floats after the columns */
@@ -71,7 +70,9 @@ li a:hover:not(.active) {
 }
 
 .about-desc{
-  margin-top: 60px;
+  margin-top: 20px;
+  /* padding-left: 50px; */
+  /* padding-right: 50px; */
   text-align: justify;
   text-justify: inter-word;
 }
@@ -121,6 +122,45 @@ li a:hover:not(.active) {
   }
 }
 
+.card {
+  margin-top: 20px;
+  box-shadow: 0 2px 15px 0 rgba(80, 80, 80, 0.2);
+  transition: 0.3s;
+  width: 85%;
+  height: 95%;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+  /* margin-top: 20px; */
+}
+.img-porto{
+  margin-top: 30px;
+  width: 100%;
+  /* float: left; */
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+a{
+  color:#2B2B2B;
+}
+
+.port-desc{
+  /* margin: auto; */
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 6%;
+  text-align: justify;
+}
+
 
 </style>
 <head>
@@ -129,20 +169,36 @@ li a:hover:not(.active) {
 <body>
   <!-- NAVBAR -->
   <ul>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact"><i class="fa-solid fa-user"></i> Contact</a></li>
+    <li><a href="#portfolio"><i class="fa-solid fa-pen"></i> Portfolio</a></li>
   </ul>
   <!--  -->
 
   <!-- About -->
   <section>
     <div class="about">
-      <h1>Hello, my name is Vijay Cheza Pangestu</h1>
+      <h1>Hello, my name is Cheza</h1>
       <img src="pict/profile.png" width="100%" height="100%">
           <div class="about-desc">
-            <p>I bring an engineering perspective with an creative problem-solving to create products and experiences people love to use. Persistence, 
-              curiosity and obsessive attention to detail define me. With a background in engineering, I experience as a web developer, machine learning programmer, 
-              data analyst and digital designer.</p>
+            <p></p><br>
+            <p>Saya merupakan mahasiswa lulusan <a href="https://telkomuniversity.ac.id/">Telkom University</a> jurusan Informatika. Pada masa 
+              pekuliahan saya menemukan antusias saya pada mata kuliah pelajaran web programming. 
+              Sejak saat itu saya mendalami dan berfokus pada pemrograman website. <br><br>
+              Tidak sampai di situ, selama berkuliah saya mengikuti banyak panitia serta organisasi yang berhubungan dengan desain. 
+
+              Saya membantu mahasiswa Universitas Gunadarma dalam membangun website toko sepatu online <a href="https://www.instagram.com/qiuqiu.sply/">Qiuqiusply</a> yang berbasis dari social media
+              instagram kemudian dikembangkan dalam bentuk website.
+
+              Saya juga mengerjakan project mahasiswa Universitas Indonesia pada ajang <a href="https://www.instagram.com/p/CeF0Mdcv3gL/">Alley Market UI</a> (virtual exhibition administrasi bisnis)
+              yang berupa desain website serta <a href="https://www.figma.com/proto/fBAgzs0hkCmkgmJZzKqSSZ/Presensee?node-id=157%3A1302&scaling=min-zoom&page-id=60%3A627&starting-point-node-id=157%3A1302&show-proto-sidebar=1">prototype</a> dari produk Presensee.
+
+              Pada semester akhir saya juga mengikuti magang MBKM dengan posisi web developer pada perusahaan 
+              <a href="https://www.telkom.co.id/sites">PT. Telkom Indonesia</a> dan mampu membuat website <a href="http://www.vireal.live">vireal.live</a> yang bertujuan sebagai branding produk <a href="https://www.instagram.com/virealbysvcc/">ViReal</a> serta menjual produk
+              <a href="https://svcc.io/">Smarteye Virtual Convention Center (SVCC)</a> yaitu <a href="https://svcc.io/webinar-development/">Webinar</a> & <a href="https://svcc.io/virtual-development/">Virtual Expo</a>. <br><br>
+              Berangkat dari penggabungan mata kuliah pemrograman web kemudian pengalaman selama membuat desain di panitia/organisasi serta 
+              mengikuti magang, menjadikan diri saya mampu membuat sebuah produk software/website yang memiliki
+              nilai desain yang sesuai dengan kaidah produk yang selalu mengikuti perkembangan jaman.
+            </p>
           </div>
     </div>
   </section>
@@ -171,7 +227,7 @@ li a:hover:not(.active) {
               Bandung, Indonesia</p>
               <i>Web Developer Intern</i>
             </div>
-            <div class="row mt-5">
+            <div class="row">
               <p><b>Telkom Indonesia ITDRI</b><br>
               Tasikmalaya, Indonesia</p>
               <i>Trainer</i>
@@ -224,7 +280,49 @@ li a:hover:not(.active) {
   <section id="portfolio"></section>
   <div class="portfolio">
     <subtitle>Portfolio</subtitle>
-    <p>SOON</p>
+    <div class="flex-container">
+      <div class="flex-item-left">
+        <div class="row">
+          <div class="card">
+            <img class="img-porto" src="pict/proj-rentcar.png">
+            <div class="port-desc">
+              <h4><b><i class="fa-solid fa-folder"></i> Website | REM Rent Car </b></h4> 
+              <p>REM (Rental Mobil) merupakan website yang dibuat pada mata kuliah rekayasa perangkat lunak.</p> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card">
+            <img class="img-porto" src="pict/proj-qiuqiusply.png">
+            <div class="port-desc">
+              <h4><i class="fa-solid fa-folder"></i><b> Website | Qiuqiusply </b></h4> 
+              <p>Interior Designer</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-item-right">
+        <div class="row">
+          <div class="card">
+            <img class="img-porto" src="pict/proj-vireal.png">
+            <div class="port-desc">
+              <h4><i class="fa-solid fa-folder"></i><b> Website | ViReal </b></h4> 
+              <p>Interior Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card">
+            <img class="img-porto" src="pict/proj-presensee.png">
+            <div class="port-desc">
+              <h4><i class="fa-solid fa-folder"></i><b> Design & Protoype | Presensee </b></h4> 
+              <p>Interior Designer</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
   </section>
   <!--  -->
