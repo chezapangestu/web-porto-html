@@ -22,17 +22,22 @@ h1 {
   font-weight: bolder;
 }
 
-ul {
-  list-style-type: none;
-  /* margin: 0; */
-  padding: 0;
-  overflow: hidden;
-  /* background-color: #333; */
+.nav{
+    /* border:1px solid #ccc;
+    border-width:1px 0; */
+    list-style:none;
+    margin:0;
+    padding: 0;
+    text-align:right;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
 }
 
-li {
-  float: right;
-}
 
 li a {
   display: block;
@@ -168,7 +173,7 @@ a{
 </head>
 <body>
   <!-- NAVBAR -->
-  <ul>
+  <ul class="nav">
     <li><a href="#contact"><i class="fa-solid fa-user"></i> Contact</a></li>
     <li><a href="#portfolio"><i class="fa-solid fa-pen"></i> Portfolio</a></li>
   </ul>
